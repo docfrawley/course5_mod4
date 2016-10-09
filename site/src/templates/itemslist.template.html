@@ -1,0 +1,12 @@
+<div class="row" >
+  <table>
+    <th>Short Name</th><th>Name</th><th>Small Portion/Price</th><th>Large Portion/Price</th><th>Description</th>
+    <tr ng-repeat="item in $ctrl.items">
+      <td> {{ item.short_name }} </td>
+      <td> {{ item.name }} </td>
+      <td> {{ item.small_portion_name }} / {{ item.price_small }}</td>
+      <td> {{ item.large_portion_name }} / {{ item.price_large }}</td>
+      <td>  {{ item.description }}</td>
+    </tr>
+  </table>
+</div>

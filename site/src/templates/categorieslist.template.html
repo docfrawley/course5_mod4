@@ -1,0 +1,13 @@
+
+  <div class="row" >
+    <table>
+      <th>CATEGORY</th><th>NAME</th><th>SPECIAL INSTRUCTIONS</th>
+      <tr ng-repeat="item in $ctrl.items">
+        <td>
+    <button class="btn btn-sm btn-default" ui-sref="itemsList({category: item.short_name})">
+      {{ item.short_name }}</button></td>
+        <td> {{ item.name }} </td>
+        <td> {{ item.special_instructions }} </td>
+      </tr>
+    </table>
+  </div>
